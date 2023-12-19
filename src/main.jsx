@@ -1,19 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './index.css'; // If you have global styles
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
-// If you're using React Router, you might also import the BrowserRouter here
-import { BrowserRouter } from 'react-router-dom';
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// Set up the root element for React to hook into
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// Render the App component wrapped with BrowserRouter if you're using React Router
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </React.StrictMode>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );

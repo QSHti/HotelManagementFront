@@ -10,6 +10,7 @@ import BookingForm from './components/booking/BookingForm';
 import AddRoom from './components/rooms/AddRoom';
 import AddAdmin from './components/admins/AddAdmin';
 import AddReservation from './components/reservation/AddReservation';
+import ReservationList from './components/reservation/ReservationList';
 
 const App = () => {
     return (
@@ -19,10 +20,10 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/rooms" element={<RoomList />} />
                 <Route path="/rooms/:id" element={<RoomDetail />} />
-                <Route path="/book" element={<BookingForm />} />
+                <Route path="/add-reservation" element={<BookingForm />} />
                 <Route path="/add-room" element={<AddRoom />} />
                 <Route path="/add-admin" element={<AddAdmin />} />
-                <Route path="/add-reservation" element={<AddReservation />} />
+                <Route path="/reservations" element={<ReservationList />} />
                 {/* Add more routes here */}
             </Routes>
         </Router>
